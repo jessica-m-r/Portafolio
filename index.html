@@ -8,14 +8,14 @@
     <link rel="stylesheet" href="styles/navbar.css">
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/cards.css">
-    <link rel="stylesheet" href="styles/skills.css">
-    <link rel="stylesheet" href="styles/footer.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav class="navbar">
             <input type="checkbox" id="nav-toggle">
-            <label for="nav-toggle">☰ Menu</label>
+            <label for="nav-toggle">
+                <img class="icon" src="Imagenes/navbar.png" alt="navbarIcon">
+                Menu</label>
             <ul>
                 <li><a href="#about">About me</a></li>
                 <li><a href="#experience">Experience</a></li>
@@ -45,23 +45,21 @@
                     </div>
                 </div>
                 <div class="social-links">
-                    <a href="https://www.linkedin.com/in/jessica-quispe-rico" class="social-link">LinkedIn</a>
-                    <a href="https://github.com/jessica-m-r" class="social-link">GitHub</a>
-                    <a href="mailto:jessiq51@gmail.com" class="social-link">Enviar Correo</a>
+                    <a href="https://www.linkedin.com/in/jessica-quispe-rico" class="social-link" target="_blank">LinkedIn</a>
+                    <a href="https://github.com/jessica-m-r" class="social-link" target="_blank">GitHub</a>
+                    <a href="mailto:jessiq51@gmail.com" class="social-link" target="_blank">Enviar Correo</a>
                 </div>
             </div>
         </div>
     </header>
     <main class="main-content">
-
-        <section class="section" id="about">
+        <section id="about">
             <div class="card">
                 <h2>About me</h2>
                 <p>Computer Engineering student with experience in academic software development projects</p>
             </div>
         </section>
-
-        <section class="section" id="experience">
+        <section id="experience">
             <h2 class="project-title">Experience</h2>
             <div class="projects-grid">
                 <div class="project-card">
@@ -72,13 +70,13 @@
                             System capable of performing subnetting and supernetting,
                             calculating network, broadcast, and mask addresses, valid ranges, and the number of hosts.
                         </p>
-                        <div class="project-tags">
-                            <span class="tag">Netbeans</span>
-                            <span class="tag">Java</span>
-                            <span class="tag">PostgreSQL</span>
+                        <div>
+                            <p class="tag">Netbeans</p>
+                            <p class="tag">Java</p>
+                            <p class="tag">PostgreSQL</p>
                         </div>
                         <div class="project-links">
-                            <a href="https://github.com/jessica-m-r" class="link">Código</a>
+                            <a href="https://github.com/jessica-m-r" target="_blank">Código</a>
                         </div>
                     </div>
                 </div>
@@ -90,20 +88,37 @@
                             System capable of performing subnetting and supernetting,
                             calculating network, broadcast, and mask addresses, valid ranges, and the number of hosts.
                         </p>
-                        <div class="project-tags">
-                            <span class="tag">Netbeans</span>
-                            <span class="tag">Java</span>
-                            <span class="tag">PostgreSQL</span>
+                        <div>
+                            <p class="tag">Netbeans</p>
+                            <p class="tag">Java</p>
+                            <p class="tag">PostgreSQL</p>
                         </div>
                         <div class="project-links">
-                            <a href="https://github.com/jessica-m-r" class="link">Código</a>
+                            <a href="https://github.com/jessica-m-r" target="_blank">Código</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="Imagenes/calculadora.png" alt="CalculadorIP" class="project-image">
+                    <div class="project-content">
+                        <h3>IP Address Calculator</h3>
+                        <p>
+                            System capable of performing subnetting and supernetting,
+                            calculating network, broadcast, and mask addresses, valid ranges, and the number of hosts.
+                        </p>
+                        <div>
+                            <p class="tag">Netbeans</p>
+                            <p class="tag">Java</p>
+                            <p class="tag">PostgreSQL</p>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/jessica-m-r" target="_blank">Código</a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-
-        <section class="section" id="education">
+        <section id="education">
             <div class="card">
                 <h2>Higher education</h2>
                 <h4>Universidad Mayor de San Simón</h4>
@@ -111,12 +126,11 @@
                 <p>Licenciatura en Ingeniería Informática</p>
             </div>
         </section>
-
-        <section class="section" id="skills">
+        <section id="skills">
             <div class="card">
                 <h2>Skills</h2>
                 <div class="skills-grid">
-                    <div class="skills-category">
+                    <div>
                         <h4>Frontend</h4>
                         <div class="skills-list">
                             <span class="tag">React</span>
@@ -125,21 +139,21 @@
                             <span class="tag">JavaScript</span>
                         </div>
                     </div>
-                    <div class="skills-category">
+                    <div>
                         <h4>Backend</h4>
                         <div class="skills-list">
                             <span class="tag">Node.js</span>
                             <span class="tag">PostgreSQL</span>
                         </div>
                     </div>
-                    <div class="skills-category">
+                    <div>
                         <h4>Design</h4>
                         <div class="skills-list">
                             <span class="tag">Figma</span>
                             <span class="tag">Prototyping</span>
                         </div>
                     </div>
-                    <div class="skills-category">
+                    <div>
                         <h4>Tools</h4>
                         <div class="skills-list">
                             <span class="tag">Git</span>
@@ -149,19 +163,16 @@
                 </div>
             </div>
         </section>
-
-        <section class="section" id="languages">
+        <section id="languages">
             <div class="card">
                 <h2>Languages</h2>
                 <p>Spanish: Native</p>
                 <p>English: High-Intermediate</p>
             </div>
         </section>
-
     </main>
-
     <footer class="footer">
-        <p>© 2026 Jessica Mayra Quispe Rico. Todos los derechos reservados.</p>
+        <p>2026 Jessica Mayra Quispe Rico. Todos los derechos reservados.</p>
     </footer>
 </body>
 </html>

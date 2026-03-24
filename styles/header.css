@@ -22,7 +22,7 @@
     margin-bottom: 1rem;
 }
 .contact-info { 
-    margin-bottom: 0.5rem; 
+    margin: 0.5rem; 
 }
 .contact-info p { 
     font-size: 0.8rem; 
@@ -43,33 +43,43 @@
     gap: 0.5rem; 
 }
 .social-link {
-    padding: 0.5rem 1rem;
+    padding: 0.7rem;
     background-color: #475569;
     border-radius: 0.5rem;
     text-decoration: none;
     color: #f8fafc;
     font-size: 0.8rem;
+    transition: background-color 0.2s, transform 0.2s;
+}
+.social-link:hover {
+    background-color: #181818;
+    transform: translateY(-2px);
 }
 
-@media only screen and (orientation: landscape){
-    .banner { 
-        height: 16rem; 
+@media only screen and (min-width: 768px) {
+    .profile-container {
+        display: flex;
+        align-items: center;
+        text-align: left;
+        gap: 1.5rem;
+        padding: 1rem 2rem;
+        margin-top: -4rem;
+        max-width: 860px;
+        margin-left: auto;
+        margin-right: auto;
     }
-    .profile-container { 
-        padding: 0 2rem; 
-        margin-top: -4rem; 
+    .profile-photo {
+        flex-shrink: 0;
+        margin-bottom: 0;
     }
-    .profile-photo { 
-        width: 10rem; 
-        height: 10rem; 
+    .profile-info {
+        padding-top: 4rem;
     }
-    .contact-info { 
-        display: flex; 
-        justify-content: center; 
-        gap: 1.5rem; 
-        flex-wrap: wrap; 
+    .social-links {
+        justify-content: flex-start;
+        margin-top: 0.5rem;
     }
-    .contact-info p { 
-        margin-bottom: 0; 
+    .contact-info {
+        margin: 0.25rem 0;
     }
 }

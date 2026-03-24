@@ -1,8 +1,7 @@
 .navbar { 
     background-color: #121e38; 
     position: sticky; 
-    top: 0; 
-    z-index: 100; 
+    top: 0;  
 }
 #nav-toggle { 
     display: none; 
@@ -11,10 +10,10 @@
     display: block; 
 }
 .navbar label { 
-    color: white; 
-    cursor: pointer; 
+    color: white;  
     padding: 0.5rem; 
-    display: block; 
+    display: block;
+    cursor: pointer;
 }
 .navbar ul { 
     display: none; 
@@ -25,12 +24,27 @@
 .navbar a { 
     display: block; 
     padding: 0.5rem 1rem; 
-    color: white; 
-    text-decoration: none; 
+    color: #fff; 
+    text-decoration: none;
+    transition: background-color 0.2s, color 0.2s;
 }
- 
-@media only screen and (orientation: landscape){
-    .navbar { 
-        padding: 0.4rem 2rem; 
+.navbar a:hover {
+    background-color: #1c2e52;
+    color: #93c5fd;
+}
+
+@media only screen and (min-width: 768px) {
+    .navbar label {
+        display: none;
+    }
+    .navbar ul {
+        display: flex;
+        position: static;
+        background-color: transparent;
+    }
+    .navbar {
+        display: flex;
+        align-items: center;
+        padding: 0 1rem;
     }
 }
