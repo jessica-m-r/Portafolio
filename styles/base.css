@@ -9,14 +9,14 @@ body {
     max-width: 860px;
     margin: 0 auto;
 }
-.footer {
+footer {
     background-color: #fff;
     border-top: 0.0625rem solid #e2e8f0;
     padding: 1rem;
     text-align: center;
     margin-top: 3rem;
 }
-.footer p { 
+footer p { 
     color: #64748b; 
     font-size: 0.875rem; 
 }
