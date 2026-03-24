@@ -1,0 +1,36 @@
+.navbar { 
+    background-color: #121e38; 
+    position: sticky; 
+    top: 0; 
+    z-index: 100; 
+}
+#nav-toggle { 
+    display: none; 
+}
+#nav-toggle:checked ~ ul { 
+    display: block; 
+}
+.navbar label { 
+    color: white; 
+    cursor: pointer; 
+    padding: 0.5rem; 
+    display: block; 
+}
+.navbar ul { 
+    display: none; 
+    list-style: none; 
+    position: absolute; 
+    background-color: #121e38; 
+}
+.navbar a { 
+    display: block; 
+    padding: 0.5rem 1rem; 
+    color: white; 
+    text-decoration: none; 
+}
+ 
+@media only screen and (orientation: landscape){
+    .navbar { 
+        padding: 0.4rem 2rem; 
+    }
+}
